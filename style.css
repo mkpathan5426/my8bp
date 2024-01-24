@@ -37,14 +37,28 @@ body {
 .opp {
     flex-direction: row-reverse;
 }
-.profile, .name {
+.profile {
     border: 1px solid black;
-    filter: invert();
     border-radius: 5px;
-    padding: 5px;
     font-weight: 900;
+    height: 50px;
+    width: 50px;
 }
 
+.user-opp img {
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.name {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 900;
+    padding: 5px;
+    width: 200px;
+    overflow: hidden;
+}
 .total-bet {
     width: 50px;
     height: 50px;
