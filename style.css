@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3a3a3a;
+}
+
+.game-container {
+    background-color: rgb(9, 14, 90);
+    width: 950px;
+    height: 550px;
+}
+
+.user-opp {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user, .opp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.opp {
+    flex-direction: row-reverse;
+}
+.profile, .name {
+    border: 1px solid black;
+    filter: invert();
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 900;
+}
+
+.total-bet {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(216, 34, 34);
+    filter: invert();
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.game-table-border {
+    width: 800px;
+    height: 400px;
+    border: 20px solid rgb(216, 34, 34);
+    border-radius: 10px;
+}
+
+.game-table {
+    width: 100%;
+    height: 100%;
+    background-color: #5EC7F1;
+    box-shadow: inset 0 0 35px 5px rgb(129, 128, 128);
+    border: 10px solid #5EC7F1;
+    position: relative;
+    border-radius: 14px;
+}
+
+#shot-bar-container {
+    background-color: #12bd92;
+    width: 20px;
+    height: 270px;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+#shot-bar {
+    width: 20px;
+    height: 270px;
+    background: linear-gradient(yellow, rgb(10, 219, 10), red);
+    cursor: grab;
+    border-radius: 5px;
+}
+
+.pocket {
+    width: 25px;
+    height: 25px;
+    background-color: #1d1e1f;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.shooting-line {
+    width: 2px;
+    height: 100%;
+    background-color: #8d8d8d;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#top-left {
+    top: -10px;
+    left: -10px;
+}
+
+#top-center {
+    top: -20px;
+    left: 50%;
+}
+
+#top-right {
+    top: -10px;
+    right: -10px;
+}
+
+#bottom-left {
+    bottom: -10px;
+    left: -10px;
+}
+
+#bottom-center {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottom-right {
+    bottom: -10px;
+    right: -10px;
+}
+
+
+.user-action {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-155%, -50%);
+    align-items: center;
+}
+
+.cue {
+    width: 300px;
+    height: 5px;
+    background-color: rgb(165, 167, 84);
+    border-radius: 5px 25px 25px 5px;
+    position: relative;
+    
+}
+
+.cue-ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#cue-ball {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.other-balls {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 80px;
+}
+
+.ball1-7 {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.ball-8 {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.ball9-14 {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* body {
+    transform: rotate(90deg);
+} */
