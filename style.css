@@ -77,8 +77,8 @@ body {
     align-items: center;
 }
 .game-table-border {
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 250px;
     border: 20px solid rgb(216, 34, 34);
     border-radius: 10px;
 }
